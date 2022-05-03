@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Gradiente</title>
+<h1>Gradientes</h1>
+</head>
+<body>
+<style>
+#grad {
+  height: 20px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(red, yellow);
+}
+</style>
+<style>
+#grad1 {
+  height: 20px;
+  background-color: blue; /* For browsers that do not support gradients */
+  background-image: linear-gradient(blue, pink);
+}
+</style>
+<style>
+#grad2 {
+  height: 20px;
+  background-color: green; /* For browsers that do not support gradients */
+  background-image: linear-gradient(green, brown);
+}
+</style>
+<style>
+#grad3 {
+  height: 150px;
+  width: 200px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: radial-gradient(blue, green, red);
+}
+</style>
+<style>
+#grad4 {
+  height: 150px;
+  width: 200px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: repeating-radial-gradient(blue, red 10%, green 15%);
+}
+</style>
+<style>
+#grad5 {
+  height: 200px;
+  width: 200px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: conic-gradient(red, yellow, green, blue, purple);
+}
+</style>
+Os gradientes CSS permitem exibir transições suaves entre duas ou mais cores especificadas.<br>
+CSS define três tipos de gradientes:
+
+Gradientes Lineares (baixo/cima/esquerda/direita/diagonal). Para baixo é o modo padrão.<br>
+Gradientes radiais (definidos pelo seu centro).<br>
+Gradientes cônicos (girados em torno de um ponto central).
+
+<h3>Exemplo de Gradientes</h3>
+<xmp> Foi necessário uma tag de estilização para manipular o gradiente: <br>
+<style>
+#grad2 { -- Aqui é o nome do estilo
+  height: 20px; -- Aqui a altura pré-definida
+  background-color: green; -- Caso o navegador não suporte o gradiente , ele exibirá uma cor única definida aqui
+  background-image: linear-gradient(green, brown); Aqui define a direção e as cores utilizadas
+}
+</style>
+<br> Na hora de utilizar o estilo é só utilizar o nome, como por exemplo "grad"
+<div id="grad"></div>
+</xmp>
+<h2>Linear</h2><br>
+<h3>Código:</h3>
+<xmp> 
+background-image: linear-gradient(red, yellow);
+</xmp>
+<h3>Resultado:</h3>
+<div id="grad">Gradiente Linear 1</div>
+<h3>Código:</h3>
+<xmp> 
+background-image: linear-gradient(blue, pink);
+</xmp>
+<h3>Resultado:</h3>
+<div id="grad1">Gradiente Linear 2</div>
+<h3>Código:</h3>
+<xmp> 
+background-image: linear-gradient(green, brown);
+</xmp>
+<h3>Resultado:</h3>
+<div id="grad2">Gradiente Linear 3</div>
+<h2>Radial</h2><br>
+<h3>Código:</h3>
+<xmp> 
+background-image: radial-gradient(blue, green, red);
+</xmp>
+<h3>Resultado:</h3>
+<div id="grad3">Radial 1</div>
+<h3>Código:</h3>
+<xmp> Tem a forma de repetir o gradiente várias vezes
+background-image: repeating-radial-gradient(blue, red 10%, green 15%);
+</xmp>
+<h3>Resultado:</h3>
+<div id="grad4">Radial 2</div>
+<h2>Cônico</h2><br>
+<h3>Código:</h3>
+<xmp> 
+background-image: conic-gradient(red, yellow, green, blue, purple);
+</xmp>
+<h3>Resultado:</h3>
+<div id="grad5">Cônico</div>
+</body>
+</html>
